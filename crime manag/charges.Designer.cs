@@ -258,7 +258,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(102, 35);
             this.CancelBtn.TabIndex = 49;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Delete";
             this.CancelBtn.UseVisualStyleBackColor = false;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -311,10 +311,10 @@
             // RemarkTb
             // 
             this.RemarkTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemarkTb.Location = new System.Drawing.Point(626, 69);
+            this.RemarkTb.Location = new System.Drawing.Point(609, 69);
             this.RemarkTb.Multiline = true;
             this.RemarkTb.Name = "RemarkTb";
-            this.RemarkTb.Size = new System.Drawing.Size(140, 78);
+            this.RemarkTb.Size = new System.Drawing.Size(157, 78);
             this.RemarkTb.TabIndex = 43;
             // 
             // label15
@@ -323,7 +323,7 @@
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label15.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(623, 46);
+            this.label15.Location = new System.Drawing.Point(605, 46);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 20);
             this.label15.TabIndex = 40;
@@ -335,19 +335,20 @@
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label14.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(425, 46);
+            this.label14.Location = new System.Drawing.Point(406, 46);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(93, 20);
             this.label14.TabIndex = 38;
             this.label14.Text = "Case Sheet";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // ChargesheetTb
             // 
             this.ChargesheetTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChargesheetTb.Location = new System.Drawing.Point(429, 69);
+            this.ChargesheetTb.Location = new System.Drawing.Point(410, 72);
             this.ChargesheetTb.Multiline = true;
             this.ChargesheetTb.Name = "ChargesheetTb";
-            this.ChargesheetTb.Size = new System.Drawing.Size(178, 78);
+            this.ChargesheetTb.Size = new System.Drawing.Size(170, 78);
             this.ChargesheetTb.TabIndex = 37;
             // 
             // label13
@@ -367,7 +368,7 @@
             this.CasehadeTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CasehadeTb.Location = new System.Drawing.Point(208, 67);
             this.CasehadeTb.Name = "CasehadeTb";
-            this.CasehadeTb.Size = new System.Drawing.Size(200, 26);
+            this.CasehadeTb.Size = new System.Drawing.Size(162, 26);
             this.CasehadeTb.TabIndex = 35;
             // 
             // label11

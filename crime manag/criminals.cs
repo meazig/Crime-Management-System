@@ -160,7 +160,7 @@ namespace crime_manag
                 try
                 {
                     con.Open();
-                   string deletekey = deletetext.Text;
+                   string deletekey;
                     SqlCommand cmd = new SqlCommand("Delete from criminalTb1 Where CrCode=@deletekey", con);
                     cmd.Parameters.AddWithValue("@deletekey", key);
                     cmd.ExecuteNonQuery();
@@ -255,6 +255,11 @@ namespace crime_manag
         }
 
         private void NameTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

@@ -240,7 +240,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(102, 35);
             this.CancelBtn.TabIndex = 49;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Delete";
             this.CancelBtn.UseVisualStyleBackColor = false;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -249,7 +249,7 @@
             this.RecordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.RecordBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecordBtn.ForeColor = System.Drawing.Color.Black;
-            this.RecordBtn.Location = new System.Drawing.Point(306, 169);
+            this.RecordBtn.Location = new System.Drawing.Point(306, 170);
             this.RecordBtn.Name = "RecordBtn";
             this.RecordBtn.Size = new System.Drawing.Size(102, 35);
             this.RecordBtn.TabIndex = 48;
@@ -320,7 +320,7 @@
             this.CriminalCb.FormattingEnabled = true;
             this.CriminalCb.Location = new System.Drawing.Point(627, 71);
             this.CriminalCb.Name = "CriminalCb";
-            this.CriminalCb.Size = new System.Drawing.Size(112, 27);
+            this.CriminalCb.Size = new System.Drawing.Size(139, 27);
             this.CriminalCb.TabIndex = 41;
             this.CriminalCb.SelectedIndexChanged += new System.EventHandler(this.CriminalCb_SelectedIndexChanged);
             this.CriminalCb.SelectionChangeCommitted += new System.EventHandler(this.CriminalCb_SelectionChangeCommitted);
@@ -342,9 +342,9 @@
             this.Date.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Date.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Date.Location = new System.Drawing.Point(242, 121);
+            this.Date.Location = new System.Drawing.Point(208, 121);
             this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(166, 26);
+            this.Date.Size = new System.Drawing.Size(200, 26);
             this.Date.TabIndex = 39;
             this.Date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -396,7 +396,7 @@
             this.PlaceTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlaceTb.Location = new System.Drawing.Point(27, 122);
             this.PlaceTb.Name = "PlaceTb";
-            this.PlaceTb.Size = new System.Drawing.Size(202, 26);
+            this.PlaceTb.Size = new System.Drawing.Size(145, 26);
             this.PlaceTb.TabIndex = 34;
             this.PlaceTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 

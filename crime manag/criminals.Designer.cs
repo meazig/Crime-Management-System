@@ -44,7 +44,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.SexTb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.AgeTb = new System.Windows.Forms.ComboBox();
             this.ActivityTb = new System.Windows.Forms.TextBox();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.RecordBtn = new System.Windows.Forms.Button();
@@ -66,7 +65,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.deletetext = new System.Windows.Forms.TextBox();
+            this.AgeTb = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
@@ -227,10 +226,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.deletetext);
+            this.panel1.Controls.Add(this.AgeTb);
             this.panel1.Controls.Add(this.SexTb);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.AgeTb);
             this.panel1.Controls.Add(this.ActivityTb);
             this.panel1.Controls.Add(this.CancelBtn);
             this.panel1.Controls.Add(this.RecordBtn);
@@ -260,9 +258,9 @@
             this.SexTb.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.SexTb.Location = new System.Drawing.Point(145, 118);
+            this.SexTb.Location = new System.Drawing.Point(180, 130);
             this.SexTb.Name = "SexTb";
-            this.SexTb.Size = new System.Drawing.Size(60, 27);
+            this.SexTb.Size = new System.Drawing.Size(86, 27);
             this.SexTb.TabIndex = 53;
             // 
             // label11
@@ -271,27 +269,20 @@
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(141, 98);
+            this.label11.Location = new System.Drawing.Point(176, 107);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(36, 20);
             this.label11.TabIndex = 52;
             this.label11.Text = "Sex";
-            // 
-            // AgeTb
-            // 
-            this.AgeTb.FormattingEnabled = true;
-            this.AgeTb.Location = new System.Drawing.Point(65, 118);
-            this.AgeTb.Name = "AgeTb";
-            this.AgeTb.Size = new System.Drawing.Size(60, 27);
-            this.AgeTb.TabIndex = 51;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // ActivityTb
             // 
             this.ActivityTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActivityTb.Location = new System.Drawing.Point(485, 65);
+            this.ActivityTb.Location = new System.Drawing.Point(505, 79);
             this.ActivityTb.Multiline = true;
             this.ActivityTb.Name = "ActivityTb";
-            this.ActivityTb.Size = new System.Drawing.Size(178, 78);
+            this.ActivityTb.Size = new System.Drawing.Size(263, 78);
             this.ActivityTb.TabIndex = 50;
             // 
             // CancelBtn
@@ -299,11 +290,11 @@
             this.CancelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CancelBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelBtn.ForeColor = System.Drawing.Color.Black;
-            this.CancelBtn.Location = new System.Drawing.Point(666, 160);
+            this.CancelBtn.Location = new System.Drawing.Point(465, 170);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(102, 35);
             this.CancelBtn.TabIndex = 49;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Delete";
             this.CancelBtn.UseVisualStyleBackColor = false;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -312,7 +303,7 @@
             this.RecordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.RecordBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecordBtn.ForeColor = System.Drawing.Color.Black;
-            this.RecordBtn.Location = new System.Drawing.Point(306, 170);
+            this.RecordBtn.Location = new System.Drawing.Point(312, 170);
             this.RecordBtn.Name = "RecordBtn";
             this.RecordBtn.Size = new System.Drawing.Size(102, 35);
             this.RecordBtn.TabIndex = 48;
@@ -325,7 +316,7 @@
             this.EditTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.EditTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditTb.ForeColor = System.Drawing.Color.Black;
-            this.EditTb.Location = new System.Drawing.Point(154, 170);
+            this.EditTb.Location = new System.Drawing.Point(145, 170);
             this.EditTb.Name = "EditTb";
             this.EditTb.Size = new System.Drawing.Size(102, 35);
             this.EditTb.TabIndex = 47;
@@ -377,9 +368,9 @@
             // 
             this.NameTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTb.ForeColor = System.Drawing.Color.Black;
-            this.NameTb.Location = new System.Drawing.Point(65, 69);
+            this.NameTb.Location = new System.Drawing.Point(59, 79);
             this.NameTb.Name = "NameTb";
-            this.NameTb.Size = new System.Drawing.Size(140, 26);
+            this.NameTb.Size = new System.Drawing.Size(207, 26);
             this.NameTb.TabIndex = 43;
             this.NameTb.TextChanged += new System.EventHandler(this.NameTb_TextChanged);
             // 
@@ -389,7 +380,7 @@
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label16.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(61, 46);
+            this.label16.Location = new System.Drawing.Point(55, 56);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(52, 20);
             this.label16.TabIndex = 42;
@@ -402,7 +393,7 @@
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label15.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(481, 42);
+            this.label15.Location = new System.Drawing.Point(501, 53);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(144, 20);
             this.label15.TabIndex = 40;
@@ -414,7 +405,7 @@
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label14.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(252, 44);
+            this.label14.Location = new System.Drawing.Point(268, 53);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(74, 20);
             this.label14.TabIndex = 38;
@@ -423,10 +414,10 @@
             // AddressTb
             // 
             this.AddressTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressTb.Location = new System.Drawing.Point(256, 65);
+            this.AddressTb.Location = new System.Drawing.Point(272, 79);
             this.AddressTb.Multiline = true;
             this.AddressTb.Name = "AddressTb";
-            this.AddressTb.Size = new System.Drawing.Size(178, 78);
+            this.AddressTb.Size = new System.Drawing.Size(213, 78);
             this.AddressTb.TabIndex = 37;
             this.AddressTb.TextChanged += new System.EventHandler(this.AddressTb_TextChanged);
             // 
@@ -436,7 +427,7 @@
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(61, 95);
+            this.label12.Location = new System.Drawing.Point(55, 107);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(39, 20);
             this.label12.TabIndex = 33;
@@ -525,12 +516,14 @@
             this.pictureBox3.TabIndex = 53;
             this.pictureBox3.TabStop = false;
             // 
-            // deletetext
+            // AgeTb
             // 
-            this.deletetext.Location = new System.Drawing.Point(485, 170);
-            this.deletetext.Name = "deletetext";
-            this.deletetext.Size = new System.Drawing.Size(166, 26);
-            this.deletetext.TabIndex = 54;
+            this.AgeTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTb.ForeColor = System.Drawing.Color.Black;
+            this.AgeTb.Location = new System.Drawing.Point(59, 130);
+            this.AgeTb.Name = "AgeTb";
+            this.AgeTb.Size = new System.Drawing.Size(96, 26);
+            this.AgeTb.TabIndex = 54;
             // 
             // criminals
             // 
@@ -610,12 +603,11 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox AgeTb;
         private System.Windows.Forms.TextBox ActivityTb;
         private System.Windows.Forms.ComboBox SexTb;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox deletetext;
+        private System.Windows.Forms.TextBox AgeTb;
     }
 }

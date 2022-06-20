@@ -52,7 +52,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.PassTb = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.AgeTB = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.AddressTb = new System.Windows.Forms.TextBox();
@@ -70,6 +69,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.AgeTB = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
@@ -216,6 +216,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.AgeTB);
             this.panel1.Controls.Add(this.policeDGV);
             this.panel1.Controls.Add(this.SexTb1);
             this.panel1.Controls.Add(this.label18);
@@ -227,7 +228,6 @@
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.PassTb);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.AgeTB);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.AddressTb);
@@ -270,9 +270,9 @@
             this.SexTb1.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.SexTb1.Location = new System.Drawing.Point(186, 121);
+            this.SexTb1.Location = new System.Drawing.Point(311, 119);
             this.SexTb1.Name = "SexTb1";
-            this.SexTb1.Size = new System.Drawing.Size(55, 27);
+            this.SexTb1.Size = new System.Drawing.Size(64, 27);
             this.SexTb1.TabIndex = 52;
             // 
             // label18
@@ -281,7 +281,7 @@
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label18.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(182, 98);
+            this.label18.Location = new System.Drawing.Point(307, 96);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 20);
             this.label18.TabIndex = 51;
@@ -304,7 +304,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(102, 35);
             this.CancelBtn.TabIndex = 49;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "Delete";
             this.CancelBtn.UseVisualStyleBackColor = false;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -313,7 +313,7 @@
             this.RecordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.RecordBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecordBtn.ForeColor = System.Drawing.Color.Black;
-            this.RecordBtn.Location = new System.Drawing.Point(306, 170);
+            this.RecordBtn.Location = new System.Drawing.Point(311, 170);
             this.RecordBtn.Name = "RecordBtn";
             this.RecordBtn.Size = new System.Drawing.Size(102, 35);
             this.RecordBtn.TabIndex = 48;
@@ -376,15 +376,6 @@
             this.label16.TabIndex = 42;
             this.label16.Text = "Password";
             // 
-            // AgeTB
-            // 
-            this.AgeTB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgeTB.FormattingEnabled = true;
-            this.AgeTB.Location = new System.Drawing.Point(76, 121);
-            this.AgeTB.Name = "AgeTB";
-            this.AgeTB.Size = new System.Drawing.Size(55, 27);
-            this.AgeTB.TabIndex = 41;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -435,9 +426,9 @@
             // 
             this.NameTb.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.NameTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTb.Location = new System.Drawing.Point(239, 69);
+            this.NameTb.Location = new System.Drawing.Point(230, 69);
             this.NameTb.Name = "NameTb";
-            this.NameTb.Size = new System.Drawing.Size(136, 26);
+            this.NameTb.Size = new System.Drawing.Size(145, 26);
             this.NameTb.TabIndex = 35;
             // 
             // label12
@@ -446,7 +437,7 @@
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(72, 98);
+            this.label12.Location = new System.Drawing.Point(226, 96);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(39, 20);
             this.label12.TabIndex = 33;
@@ -458,7 +449,7 @@
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(72, 42);
+            this.label11.Location = new System.Drawing.Point(72, 46);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(101, 20);
             this.label11.TabIndex = 32;
@@ -472,7 +463,7 @@
             "Inspector",
             "Officer",
             "Agent"});
-            this.desTb.Location = new System.Drawing.Point(76, 67);
+            this.desTb.Location = new System.Drawing.Point(76, 68);
             this.desTb.Name = "desTb";
             this.desTb.Size = new System.Drawing.Size(145, 27);
             this.desTb.TabIndex = 31;
@@ -573,6 +564,15 @@
             this.label4.Text = "CASES";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
+            // AgeTB
+            // 
+            this.AgeTB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.AgeTB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTB.Location = new System.Drawing.Point(230, 120);
+            this.AgeTB.Name = "AgeTB";
+            this.AgeTB.Size = new System.Drawing.Size(57, 26);
+            this.AgeTB.TabIndex = 54;
+            // 
             // police
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -636,7 +636,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox PassTb;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox AgeTB;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox AddressTb;
@@ -659,5 +658,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox PhoneTb1;
         private System.Windows.Forms.DataGridView policeDGV;
+        private System.Windows.Forms.TextBox AgeTB;
     }
 }

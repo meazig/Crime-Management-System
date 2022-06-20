@@ -54,9 +54,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(82, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 24);
+            this.label1.Size = new System.Drawing.Size(257, 24);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Crime Managnment System";
+            this.label1.Text = "Crime Management System";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -66,9 +66,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(12, 196);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(379, 22);
+            this.label2.Size = new System.Drawing.Size(378, 22);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Crime Managnment System for police station";
+            this.label2.Text = "Crime Management System for police station";
             // 
             // form
             // 
